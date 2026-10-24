@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Women's Shivambu Circle: body autonomy through direct experience. A free gathering held by Ana Seahawk, Fiona Gardner and Megan Macdonald.">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:title" content="Women's Shivambu Circle">
+  <meta property="og:description" content="Body autonomy through direct experience. Curiosity is enough.">
+  <meta property="og:image" content="assets/circle-of-light.jpg">
+  <title>Women's Shivambu Circle</title>
+  <link rel="icon" href="assets/circle-of-light.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap">
+  <style>
+    :root {
+      --ground: #f6efe2;
+      --paper: #fbf7ee;
+      --ink: #2b2226;
+      --ink-soft: #6a5d60;
+      --wine: #5a1a2e;
+      --gold: #9a7428;
+      --water: #3f8c91;
+      --line: rgba(154, 116, 40, 0.28);
+      --display: 'Cormorant Garamond', Garamond, Georgia, serif;
+      --body: 'Source Serif 4', Georgia, serif;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --ground: #141618; --paper: #1c1f22; --ink: #f1e9dc; --ink-soft: #b8ad9f;
+        --wine: #d9a2b2; --gold: #d6b062; --water: #7fc3c6; --line: rgba(214, 176, 98, 0.22);
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--ground);
+      color: var(--ink);
+      font: 17px/1.65 var(--body);
+      -webkit-font-smoothing: antialiased;
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      min-height: 88vh;
+    }
+    .hero-text {
+      display: grid;
+      align-content: center;
+      justify-items: center;
+      gap: 1.1rem;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .hero-art { background: url('assets/circle-of-light.jpg') center / cover no-repeat; min-height: 320px; }
+    .moons { color: var(--gold); letter-spacing: .5em; font-size: 1.1rem; margin-right: -.5em; }
+    .eyebrow { margin: 0; color: var(--gold); font-size: .75rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; }
+    h1, h2 { font-family: var(--display); font-weight: 500; margin: 0; text-wrap: balance; }
+    h1 { color: var(--wine); font-size: clamp(2.8rem, 7vw, 4.6rem); line-height: .98; letter-spacing: .04em; text-transform: uppercase; }
+    h2 { font-size: clamp(2rem, 5vw, 2.8rem); line-height: 1.05; }
+    .tagline { margin: 0; color: var(--gold); font-family: var(--display); font-style: italic; font-size: 1.45rem; }
+    .rule { width: 9rem; height: 1px; background: var(--line); }
+    .hosts { margin: 0; font-family: var(--display); font-size: 1.35rem; line-height: 1.35; }
+    .hosts span { display: block; color: var(--ink-soft); font-family: var(--body); font-size: .85rem; letter-spacing: .06em; }
+    .enough { margin: 0; color: var(--gold); font-family: var(--display); font-style: italic; font-size: 1.6rem; }
+    .button {
+      display: inline-block;
+      margin-top: .4rem;
+      padding: .75rem 1.4rem;
+      color: #fbf7ee;
+      background: var(--wine);
+      border: 1px solid var(--wine);
+      font-size: .8rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+    @media (prefers-color-scheme: dark) { .button { color: #141618; } }
+    .shell { max-width: 44rem; margin-inline: auto; padding: 4.5rem 1.25rem; display: grid; gap: 1.2rem; }
+    .shell p { margin: 0; }
+    .soft { color: var(--ink-soft); }
+    .paper { background: var(--paper); border-block: 1px solid var(--line); }
+    ul.agreements { margin: .4rem 0 0; padding: 0; list-style: none; display: grid; gap: .7rem; }
+    ul.agreements li { padding-left: 1.6rem; position: relative; }
+    ul.agreements li::before { content: "✦"; position: absolute; left: 0; top: .1rem; color: var(--gold); font-size: .8rem; }
+    .welcome { font-family: var(--display); font-style: italic; font-size: 1.35rem; color: var(--gold); line-height: 1.4; }
+    form { display: grid; gap: .7rem; margin-top: .6rem; }
+    .fields { display: grid; grid-template-columns: 1fr 1fr auto; gap: .6rem; }
+    input {
+      width: 100%;
+      padding: .75rem .9rem;
+      color: var(--ink);
+      background: var(--ground);
+      border: 1px solid var(--line);
+      font: inherit;
+      font-size: .95rem;
+    }
+    input:focus-visible, .button:focus-visible, a:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+    button.button { cursor: pointer; font-family: var(--body); }
+    footer { padding: 2.5rem 1.25rem 3rem; text-align: center; color: var(--ink-soft); font-size: .9rem; display: grid; gap: .6rem; }
+    footer nav { display: flex; flex-wrap: wrap; justify-content: center; gap: .4rem 1.4rem; }
+    a { color: var(--water); text-underline-offset: .2em; }
+    .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+    @media (max-width: 760px) {
+      .hero { grid-template-columns: 1fr; min-height: 0; }
+      .hero-art { order: -1; min-height: 46vh; }
+      .hero-text { padding: 2.8rem 16px 3.2rem; }
+      .fields { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-text">
+      <div class="moons" aria-hidden="true">☾ ◐ ● ◑ ☽</div>
+      <p class="eyebrow">Free gathering · Next date to be announced</p>
+      <h1>Women’s Shivambu Circle</h1>
+      <p class="tagline">Body Autonomy Through Direct Experience</p>
+      <div class="rule" aria-hidden="true"></div>
+      <p class="hosts"><span>Hosted by</span>Ana Seahawk<br>Fiona Gardner<br>Megan Macdonald</p>
+      <div class="rule" aria-hidden="true"></div>
+      <p class="enough">Curiosity is enough.</p>
+      <a class="button" href="#next">Hear about the next circle</a>
+    </div>
+    <div class="hero-art" role="img" aria-label="A circle of golden light over still water, beneath the phases of the moon"></div>
+  </header>
+
+  <main>
+    <section class="shell">
+      <p class="eyebrow">The circle</p>
+      <h2>Shivambu as lived experience.</h2>
+      <p class="soft">A gathering for women to speak carefully and honestly about Shivambu as lived experience. The circle holds questions, discoveries and shared witness while each woman’s experience remains her own.</p>
+    </section>
+
+    <section class="paper">
+      <div class="shell">
+        <p class="eyebrow">How we sit together</p>
+        <ul class="agreements">
+          <li>No one is required to share.</li>
+          <li>No one is required to agree.</li>
+          <li>No one is required to know.</li>
+          <li>We speak from the “I.”</li>
+          <li>We listen with care.</li>
+          <li>We leave room for mystery.</li>
+          <li>Every woman remains sovereign in her own body.</li>
+        </ul>
+        <p class="welcome">Curiosity is welcome. Listening is welcome. Passing is welcome.</p>
+      </div>
+    </section>
+
+    <section class="shell" id="next">
+      <p class="eyebrow">The next circle</p>
+      <h2>Date to be announced.</h2>
+      <p class="soft">Leave your email and you will hear when the next circle is set.</p>
+      <form action="https://app.kit.com/forms/9877706/subscriptions" method="post">
+        <div class="fields">
+          <label class="visually-hidden" for="email">Email address</label>
+          <input id="email" name="email_address" type="email" placeholder="your email" required>
+          <label class="visually-hidden" for="name">First name</label>
+          <input id="name" name="fields[first_name]" type="text" placeholder="first name">
+          <button class="button" type="submit">Keep me posted</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Held together by Ana Seahawk, Fiona Gardner and Megan Macdonald.</p>
+    <nav aria-label="Connected sites">
+      <a href="https://anaseahawk.com/">Ana Seahawk</a>
+      <a href="https://anaseahawk.github.io/the-water-of-life/">The Water of Life</a>
+      <a href="https://mother-spirit.com">Mother Spirit</a>
+    </nav>
+  </footer>
+</body>
+</html>
