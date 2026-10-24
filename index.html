@@ -52,7 +52,20 @@
       padding: 4rem 2rem;
       text-align: center;
     }
-    .hero-art { background: url('assets/circle-of-light.jpg') center / cover no-repeat; min-height: 320px; }
+    .hero-art {
+      display: grid;
+      place-items: center;
+      padding: 2rem 1.5rem;
+      min-height: 320px;
+      background: url('assets/circle-of-light.jpg') center / cover no-repeat;
+    }
+    /* The title sits in the pale centre of the image, so it keeps the same colour in both themes. */
+    .hero-art h1 {
+      max-width: 9em;
+      color: #5a1a2e;
+      text-align: center;
+      text-shadow: 0 0 18px rgba(251, 247, 238, 0.95), 0 0 4px rgba(251, 247, 238, 0.9);
+    }
     .moons { color: var(--gold); letter-spacing: .5em; font-size: 1.1rem; margin-right: -.5em; }
     .eyebrow { margin: 0; color: var(--gold); font-size: .75rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; }
     h1, h2 { font-family: var(--display); font-weight: 500; margin: 0; text-wrap: balance; }
@@ -61,6 +74,7 @@
     .tagline { margin: 0; color: var(--gold); font-family: var(--display); font-style: italic; font-size: 1.45rem; }
     .rule { width: 9rem; height: 1px; background: var(--line); }
     .hosts { margin: 0; font-family: var(--display); font-size: 1.35rem; line-height: 1.35; }
+    .hosts a { color: inherit; text-decoration-color: var(--line); }
     .hosts span { display: block; color: var(--ink-soft); font-family: var(--body); font-size: .85rem; letter-spacing: .06em; }
     .enough { margin: 0; color: var(--gold); font-family: var(--display); font-style: italic; font-size: 1.6rem; }
     .button {
@@ -114,15 +128,16 @@
     <div class="hero-text">
       <div class="moons" aria-hidden="true">☾ ◐ ● ◑ ☽</div>
       <p class="eyebrow">Free gathering · Next date to be announced</p>
-      <h1>Women’s Shivambu Circle</h1>
       <p class="tagline">Body Autonomy Through Direct Experience</p>
       <div class="rule" aria-hidden="true"></div>
-      <p class="hosts"><span>Hosted by</span>Ana Seahawk<br>Fiona Gardner<br>Megan Macdonald</p>
+      <p class="hosts"><span>Hosted by</span><a href="https://anaseahawk.com/">Ana Seahawk</a><br>Fiona Gardner<br><a href="https://expansionhealing.ca/">Megan Macdonald</a></p>
       <div class="rule" aria-hidden="true"></div>
       <p class="enough">Curiosity is enough.</p>
       <a class="button" href="#next">Hear about the next circle</a>
     </div>
-    <div class="hero-art" role="img" aria-label="A circle of golden light over still water, beneath the phases of the moon"></div>
+    <div class="hero-art">
+      <h1>Women’s Shivambu Circle</h1>
+    </div>
   </header>
 
   <main>
@@ -165,7 +180,7 @@
   </main>
 
   <footer>
-    <p>Held together by Ana Seahawk, Fiona Gardner and Megan Macdonald.</p>
+    <p>Held together by <a href="https://anaseahawk.com/">Ana Seahawk</a>, Fiona Gardner and <a href="https://expansionhealing.ca/">Megan Macdonald</a>.</p>
     <nav aria-label="Connected sites">
       <a href="https://anaseahawk.com/">Ana Seahawk</a>
       <a href="https://anaseahawk.github.io/the-water-of-life/">The Water of Life</a>
