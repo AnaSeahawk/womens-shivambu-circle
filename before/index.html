@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="What to expect at the Women's Shivambu Circle: how the circle is held, how it moves, and the agreements we sit with.">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:title" content="Before the Circle · Women's Shivambu Circle">
+  <meta property="og:description" content="How the circle is held, how it moves, and what is asked of everyone.">
+  <meta property="og:image" content="../assets/circle-of-light.jpg">
+  <title>Before the Circle</title>
+  <link rel="icon" href="../assets/circle-of-light.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap">
+  <style>
+    :root {
+      --ground: #f6efe2;
+      --paper: #fbf7ee;
+      --ink: #2b2226;
+      --ink-soft: #6a5d60;
+      --wine: #5a1a2e;
+      --gold: #9a7428;
+      --water: #3f8c91;
+      --line: rgba(154, 116, 40, 0.28);
+      --display: 'Cormorant Garamond', Garamond, Georgia, serif;
+      --body: 'Source Serif 4', Georgia, serif;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --ground: #141618; --paper: #1c1f22; --ink: #f1e9dc; --ink-soft: #b8ad9f;
+        --wine: #d9a2b2; --gold: #d6b062; --water: #7fc3c6; --line: rgba(214, 176, 98, 0.22);
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--ground);
+      color: var(--ink);
+      font: 17px/1.65 var(--body);
+      -webkit-font-smoothing: antialiased;
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      min-height: 88vh;
+    }
+    .hero-text {
+      display: grid;
+      align-content: center;
+      justify-items: center;
+      gap: 1.1rem;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .hero-art {
+      display: grid;
+      place-items: center;
+      padding: 2rem 1.5rem;
+      min-height: 320px;
+      background: url('../assets/circle-of-light.jpg') center / cover no-repeat;
+    }
+    /* The title sits in the pale centre of the image, so it keeps the same colour in both themes. */
+    .hero-art h1 {
+      max-width: 9em;
+      color: #5a1a2e;
+      text-align: center;
+      text-shadow: 0 0 18px rgba(251, 247, 238, 0.95), 0 0 4px rgba(251, 247, 238, 0.9);
+    }
+    .moons { color: var(--gold); letter-spacing: .5em; font-size: 1.1rem; margin-right: -.5em; }
+    .eyebrow { margin: 0; color: var(--gold); font-size: .75rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; }
+    h1, h2 { font-family: var(--display); font-weight: 500; margin: 0; text-wrap: balance; }
+    h1 { color: var(--wine); font-size: clamp(2.8rem, 7vw, 4.6rem); line-height: .98; letter-spacing: .04em; text-transform: uppercase; }
+    h2 { font-size: clamp(2rem, 5vw, 2.8rem); line-height: 1.05; }
+    .tagline { margin: 0; color: var(--gold); font-family: var(--display); font-style: italic; font-size: 1.45rem; }
+    .rule { width: 9rem; height: 1px; background: var(--line); }
+    .hosts { margin: 0; font-family: var(--display); font-size: 1.35rem; line-height: 1.35; }
+    .hosts a { color: inherit; text-decoration-color: var(--line); }
+    .hosts span { display: block; color: var(--ink-soft); font-family: var(--body); font-size: .85rem; letter-spacing: .06em; }
+    .enough { margin: 0; color: var(--gold); font-family: var(--display); font-style: italic; font-size: 1.6rem; }
+    .button {
+      display: inline-block;
+      margin-top: .4rem;
+      padding: .75rem 1.4rem;
+      color: #fbf7ee;
+      background: var(--wine);
+      border: 1px solid var(--wine);
+      font-size: .8rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+    @media (prefers-color-scheme: dark) { .button { color: #141618; } }
+    .shell { max-width: 44rem; margin-inline: auto; padding: 4.5rem 1.25rem; display: grid; gap: 1.2rem; }
+    .shell p { margin: 0; }
+    .soft { color: var(--ink-soft); }
+    .times { font-size: 1.1rem; }
+    #future { padding-top: 0; }
+    .quiet { color: var(--ink-soft); font-size: .9rem; text-decoration-color: var(--line); }
+    .paper { background: var(--paper); border-block: 1px solid var(--line); }
+    ul.agreements { margin: .4rem 0 0; padding: 0; list-style: none; display: grid; gap: .7rem; }
+    ul.agreements li { padding-left: 1.6rem; position: relative; }
+    ul.agreements li::before { content: "✦"; position: absolute; left: 0; top: .1rem; color: var(--gold); font-size: .8rem; }
+    .welcome { font-family: var(--display); font-style: italic; font-size: 1.35rem; color: var(--gold); line-height: 1.4; }
+    form { display: grid; gap: .7rem; margin-top: .6rem; }
+    .fields { display: grid; grid-template-columns: 1fr 1fr auto; gap: .6rem; }
+    input {
+      width: 100%;
+      padding: .75rem .9rem;
+      color: var(--ink);
+      background: var(--ground);
+      border: 1px solid var(--line);
+      font: inherit;
+      font-size: .95rem;
+    }
+    input:focus-visible, .button:focus-visible, a:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+    button.button { cursor: pointer; font-family: var(--body); }
+    footer { padding: 2.5rem 1.25rem 3rem; text-align: center; color: var(--ink-soft); font-size: .9rem; display: grid; gap: .6rem; }
+    footer nav { display: flex; flex-wrap: wrap; justify-content: center; gap: .4rem 1.4rem; }
+    a { color: var(--water); text-underline-offset: .2em; }
+    .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+    @media (max-width: 760px) {
+      .hero { grid-template-columns: 1fr; min-height: 0; }
+      .hero-art { order: -1; min-height: 46vh; }
+      .hero-text { padding: 2.8rem 16px 3.2rem; }
+      .fields { grid-template-columns: 1fr; }
+    }
+
+    .page-head { max-width: 44rem; margin-inline: auto; padding: 4.5rem 1.25rem 1rem; display: grid; justify-items: center; gap: 1.1rem; text-align: center; }
+    .page-head h1 { font-size: clamp(2.4rem, 6vw, 3.6rem); }
+    .lede { margin: 0; color: var(--gold); font-family: var(--display); font-style: italic; font-size: 1.4rem; line-height: 1.4; }
+    .back { font-size: .9rem; }
+    h3 { margin: 0; font-family: var(--display); font-weight: 600; font-size: 1.35rem; color: var(--wine); }
+    dl.roles { margin: 0; display: grid; gap: .8rem; }
+    dl.roles dt { font-family: var(--display); font-weight: 600; font-size: 1.2rem; color: var(--wine); }
+    dl.roles dd { margin: 0; }
+    ol.flow { margin: 0; padding: 0; list-style: none; counter-reset: step; display: grid; gap: 1.1rem; }
+    ol.flow > li { counter-increment: step; padding-left: 2.6rem; position: relative; }
+    ol.flow > li::before { content: counter(step); position: absolute; left: 0; top: -.15rem; color: var(--gold); font-family: var(--display); font-size: 1.6rem; line-height: 1; }
+    ol.flow strong { color: var(--wine); font-weight: 600; }
+    .round { background: var(--paper); border: 1px solid var(--line); padding: 1.2rem 1.3rem; display: grid; gap: .8rem; margin-top: .7rem; }
+    .examples { margin: 0; padding: 0; list-style: none; display: grid; gap: .45rem; font-family: var(--display); font-style: italic; font-size: 1.2rem; color: var(--ink); }
+    .practice { font-family: var(--display); font-style: italic; font-size: clamp(1.45rem, 3.6vw, 1.85rem); color: var(--wine); line-height: 1.3; text-align: center; }
+    .credit { font-style: italic; }
+  </style>
+</head>
+<body>
+  <header class="page-head">
+    <div class="moons" aria-hidden="true">☾ ◐ ● ◑ ☽</div>
+    <p class="eyebrow">Women’s Shivambu Circle</p>
+    <h1>Before the Circle</h1>
+    <div class="rule" aria-hidden="true"></div>
+    <p class="lede">A few minutes of reading here leaves more of the circle for the circle itself.</p>
+    <a class="back" href="../">← Back to the circle</a>
+  </header>
+
+  <main>
+    <section class="shell">
+      <p class="eyebrow">Who holds the circle</p>
+      <h2>Held together, roles rotating.</h2>
+      <p class="soft">The circle has holders, not an audience. Three roles pass between the hosts from one circle to the next.</p>
+      <dl class="roles">
+        <dt>The host</dt>
+        <dd>opens the circle and guides the flow, sitting in it as a peer.</dd>
+        <dt>The guardian</dt>
+        <dd>watches the pace of the circle and holds the pause.</dd>
+        <dt>The timekeeper</dt>
+        <dd>keeps the rhythm, so that every voice has room.</dd>
+      </dl>
+    </section>
+
+    <section class="paper">
+      <div class="shell">
+        <p class="eyebrow">The one thing asked of everyone</p>
+        <h2>Be seen once.</h2>
+        <p>In the opening round, each woman turns her camera on for a moment and says her name. After that, the camera can go off. Everything beyond that is a choice: sharing, listening and passing are all welcome.</p>
+        <p class="soft">If a camera isn’t possible, write ahead of the circle. <a class="js-write" data-u="anaseahawk" data-d="gmail.com" data-s="Women's Shivambu Circle: camera" hidden>Email Ana&nbsp;→</a></p>
+        <p class="soft">What is shared in the circle stays in the circle, so join from somewhere private, where the circle won’t be overheard.</p>
+      </div>
+    </section>
+
+    <section class="shell">
+      <p class="eyebrow">How the circle moves</p>
+      <h2>Ninety minutes, in nine movements.</h2>
+      <ol class="flow">
+        <li><strong>Welcome.</strong> The circle opens.</li>
+        <li><strong>Wonder.</strong> A few words on curiosity, and on looking at the body without shame.</li>
+        <li><strong>How the circle is held.</strong> The agreements are named, then a short grounding to arrive together.</li>
+        <li><strong>Shivambu as a doorway.</strong> Held here as a doorway, not an instruction. Whatever the word stirs up is part of it.</li>
+        <li><strong>Opening round · 30 seconds at most.</strong> Name, where you are with the practice, and one word for how you’re arriving.
+          <div class="round">
+            <p>The opening round is a greeting, not a story. It’s how every woman is seen and heard once, early on, so no one has to wait to arrive. Whatever wants more room has its place in the open circle that comes later.</p>
+            <ul class="examples">
+              <li>“I’m Clara. Curious, I haven’t started. Arriving: nervous.”</li>
+              <li>“I’m Ruth. About two years in, most mornings. Arriving: grateful.”</li>
+              <li>“Hi, I’m Sofia. A few weeks in. Open.”</li>
+              <li>“I’m Jo. Here to listen today. Tired.”</li>
+            </ul>
+            <p class="soft">Each of these takes about ten seconds. Thirty is the limit, not the goal. The timekeeper keeps a 30-second timer for each woman, so the open circle keeps its full time.</p>
+          </div>
+        </li>
+        <li><strong>The first question.</strong> <em>What does this bring up in you?</em> Not belief, not practice, just what’s there.</li>
+        <li><strong>Open circle.</strong> The hosts offer brief reflections, then the space opens to everyone: questions, reflections, feelings, anything unfinished. Not a formal Q&amp;A.</li>
+        <li><strong>Closing round.</strong> One word, feeling or image to leave with.</li>
+        <li><strong>After.</strong> A few minutes to linger informally, or leave quietly.</li>
+      </ol>
+    </section>
+
+    <section class="paper">
+      <div class="shell">
+        <p class="eyebrow">Three quiet practices</p>
+        <p class="practice">Speak with intention.<br>Listen with attention.<br>Tend the well-being of the circle.</p>
+      </div>
+    </section>
+
+    <section class="shell">
+      <p class="eyebrow">Two customs</p>
+      <h3>The breath between shares</h3>
+      <p>When a woman finishes speaking, the circle takes one quiet breath together before the next voice. No one needs to respond. The breath is the response.</p>
+      <h3>Hand or pause</h3>
+      <p>A raised hand means a wish to speak; raised hands are called in order. A pause is different. Anyone may type <strong>PAUSE</strong> in the chat at any moment. The guardian names it aloud, the circle takes one breath in silence, and then carries on. No reason is ever needed.</p>
+    </section>
+
+    <section class="paper">
+      <div class="shell">
+        <p class="eyebrow">How we sit together</p>
+        <ul class="agreements">
+          <li>What is shared here stays here.</li>
+          <li>No one is required to share.</li>
+          <li>No one is required to agree.</li>
+          <li>No one is required to know.</li>
+          <li>We speak from the “I.”</li>
+          <li>We listen with care.</li>
+          <li>We leave room for mystery.</li>
+          <li>Every woman remains sovereign in her own body.</li>
+        </ul>
+        <p class="welcome">Curiosity is welcome. Listening is welcome. Passing is welcome.</p>
+      </div>
+    </section>
+
+    <section class="shell">
+      <p class="eyebrow">The next circle</p>
+      <h2>Friday 11 December 2026</h2>
+      <p class="times"><strong>16:30–18:00 UTC</strong><br>17:30–19:00 CET · 08:30–10:00 PST</p>
+      <p class="soft">Online · 90 minutes</p>
+      <p><a class="button" href="https://expansionhealing.setmore.com/classes/1711f97c-7d74-49e0-838c-3d2f52660808">Register</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p class="credit">The circle form is adapted with gratitude from <a href="https://www.thecircleway.net/">The Circle Way</a>, by Christina Baldwin and Ann Linnea.</p>
+    <p>Held together by <a href="https://anaseahawk.com/">Ana Seahawk</a>, <a href="https://fionagardner.org/">Fiona Gardner</a> and <a href="https://expansionhealing.ca/">Megan Macdonald</a>.</p>
+    <p><a href="../">Women’s Shivambu Circle</a></p>
+  </footer>
+  <script>
+    document.querySelectorAll('.js-write').forEach(function (a) {
+      a.href = 'mailto:' + a.dataset.u + '@' + a.dataset.d + '?subject=' + encodeURIComponent(a.dataset.s);
+      a.hidden = false;
+    });
+  </script>
+</body>
+</html>
