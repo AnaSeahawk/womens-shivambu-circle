@@ -97,6 +97,10 @@
     #future { padding-top: 0; }
     .button.ghost { color: var(--wine); background: transparent; border-width: 2px; font-size: 1.05rem; padding: .8rem 1.8rem; text-align: center; }
     .button.ghost span { display: block; font-size: .65rem; letter-spacing: .18em; color: var(--ink-soft); }
+    .held-by { max-width: 60rem; margin-inline: auto; padding: 4.5rem 1.25rem 0; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 2.5rem; align-items: center; }
+    .held-by img { width: 100%; height: auto; display: block; border: 1px solid var(--line); }
+    .held-text { display: grid; gap: 1.2rem; }
+    .held-text p { margin: 0; }
     .paper { background: var(--paper); border-block: 1px solid var(--line); }
     ul.agreements { margin: .4rem 0 0; padding: 0; list-style: none; display: grid; gap: .7rem; }
     ul.agreements li { padding-left: 1.6rem; position: relative; }
@@ -124,6 +128,7 @@
       .hero-art { order: -1; min-height: 46vh; }
       .hero-text { padding: 2.8rem 16px 3.2rem; }
       .fields { grid-template-columns: 1fr; }
+      .held-by { grid-template-columns: 1fr; gap: 1.5rem; padding-inline: 16px; }
     }
   </style>
 </head>
@@ -146,6 +151,15 @@
   </header>
 
   <main>
+    <section class="held-by">
+      <img src="assets/held-by.jpg" width="1055" height="1319" loading="lazy" alt="Ana Seahawk, Megan Macdonald and Fiona Gardner standing together in sunlit woodland above a stream. Beneath their names: A shared field of conversation, healing, and inner waters.">
+      <div class="held-text">
+        <p class="eyebrow">Held by</p>
+        <h2>Ana, Megan and Fiona</h2>
+        <p class="soft">Three women, three paths with the waters, one circle held together. The roles rotate from circle to circle, and each host sits in the circle as a peer.</p>
+      </div>
+    </section>
+
     <section class="shell">
       <p class="eyebrow">The circle</p>
       <h2>Shivambu as lived experience.</h2>
